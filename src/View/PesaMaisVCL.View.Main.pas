@@ -38,6 +38,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnFinalizarClick(Sender: TObject);
+    procedure btnRelatorioClick(Sender: TObject);
   private
     { Private declarations }
 
@@ -54,12 +55,23 @@ implementation
 
 {$R *.dfm}
 
+uses PesaMaisVCL.Model.Entities.Bairro;
+
 { TForm1 }
 
 //Finaliza aplicação
 procedure TFrmMain.btnFinalizarClick(Sender: TObject);
 begin
     Close;
+end;
+
+procedure TFrmMain.btnRelatorioClick(Sender: TObject);
+Var
+  Bairro : TBairro;
+begin
+    Bairro := TBairro.Create;
+    Bairro.Id_Bairro := 1;
+    ShowMessage('Meu Bairro: ' + IntToStr(Bairro.Id_Bairro)  + ' ' + Bairro.Descricao + ' ' +IntToStr(bairro.Id_Bairro));
 end;
 
 procedure TFrmMain.FormClose(Sender: TObject; var Action: TCloseAction);

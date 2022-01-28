@@ -10,8 +10,8 @@ type
 
       function getId_Propriedade : Integer;
       function getRazsocial_Nome : String;
-      function getFantasia_Nome : String;
-      function getCpf_Cnpj : String;
+     {* function getFantasia_Nome : String;
+      function getCpf_Cnpj : String;    *}
 
       procedure setId_Propriedade(Value : Integer);
       procedure setRazsocial_nome(Value : String);
@@ -22,11 +22,11 @@ type
 
       property id_propriedade : Integer read getId_Propriedade write setId_Propriedade;
       property razsocial_nome : String read getRazsocial_Nome write setRazsocial_Nome;
-      property fantasia_nome : String read getFantasia_Nome write setFantasia_Nome;
+     {* property fantasia_nome : String read getFantasia_Nome write setFantasia_Nome;
       property cpf_cnpj : String read getCpf_Cnpj write setCpf_Cnpj;
       property rg_inscr : String read getRg_Inscr write setRg_Inscr;
       property fone : String read getFone write setFone;
-      property email : String read getEmail write setEmail;
+      property email : String read getEmail write setEmail; *}
   end;
 
 implementation

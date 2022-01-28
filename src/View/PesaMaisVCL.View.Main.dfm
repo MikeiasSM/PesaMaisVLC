@@ -113,6 +113,7 @@ object FrmMain: TFrmMain
           Flat = True
           ParentShowHint = False
           ShowHint = False
+          OnClick = btnRelatorioClick
         end
         object pnlEmpresa: TPanel
           Left = 0

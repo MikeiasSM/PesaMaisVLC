@@ -1,0 +1,77 @@
+unit PesaMaisVCL.Model.Entities.Bairro;
+
+interface
+Type
+  TBairro = Class
+
+
+
+Private
+  FId_Bairro : Integer;
+  FDescricao : String;
+  FId_Cidade : Integer;
+
+  function getId_bairro : Integer;
+  function getDescricao : String;
+  function getId_Cidade : Integer;
+
+  procedure setId_bairro (Value : Integer);
+  procedure setDescricao (Value : String);
+  procedure serId_Cidade (Value : Integer);
+
+Public
+  constructor Create; overload;
+  constructor Create(Bairro : TBairro); overload; //pode ser sobregarregada
+
+  property Id_Bairro : Integer read getId_bairro write setid_bairro;
+  property Descricao : String read  getDescricao write setDescricao;
+  property Id_Cidade : Integer read getId_Bairro write setId_bairro;
+
+end;
+
+  implementation
+
+
+{ TPessoa }
+
+constructor TBairro.Create;
+begin
+
+end;
+
+constructor TBairro.Create(Bairro: TBairro);
+begin
+  FId_Bairro := Bairro.getId_bairro;
+end;
+
+function TBairro.getDescricao: String;
+begin
+   Result := FDescricao;
+end;
+
+function TBairro.getId_bairro: Integer;
+begin
+   Result := FId_Bairro;
+end;
+
+function TBairro.getId_Cidade: Integer;
+begin
+  Result := FId_Cidade;
+end;
+
+procedure TBairro.serId_Cidade(Value: Integer);
+begin
+   FId_Cidade := Value;
+end;
+
+procedure TBairro.setDescricao(Value: String);
+begin
+   FDescricao := Value;
+end;
+
+procedure TBairro.setId_bairro(Value: Integer);
+begin
+   FId_Bairro := Value;
+end;
+
+end.
