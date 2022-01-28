@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/01/28 09:01:32.436,=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:05:34.327,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\PesaMaisVCL.View.Main.dfm=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/28 09:05:34.327,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\PesaMaisVCL.View.Main.pas=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:05:49.396,\\192.168.86.28\PlenusTECH\PesaMaisVCL\PesaMaisVCL.dproj=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/01/28 09:21:21.729,=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:22:01.532,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\Styles\PesaMaisVCL.View.Styles.Colors.pas=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:22:17.320,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\Styles\PesaMaisVCL.View.Styles.FontColors.pas=\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\Styles\PesaMaisVCL.View.Styles.Colors.pas</Transaction>
+  </Transactions>
+</BorlandProject>

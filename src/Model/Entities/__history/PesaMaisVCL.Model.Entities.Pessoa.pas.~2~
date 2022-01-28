@@ -1,0 +1,23 @@
+unit PesaMaisVCL.Model.Entities.Pessoa;
+
+interface
+
+type
+  TPessoa = class
+    private
+      FId_pessoa : Integer;
+
+      procedure getId_Pessoa;
+      function setId_Pessoa : Integer;
+
+    public
+      property id_pessoa : Integer read getId_Pessoa write setId_Pessoa;
+  end;
+
+implementation
+
+{ TPessoa }
+
+function TPessoa.setId_Pessoa(Value : Integer) : Integer;
+
+end.

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/01/28 09:01:32.000.436,=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:05:34.000.327,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\PesaMaisVCL.View.Main.pas=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/28 09:05:34.000.327,\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\PesaMaisVCL.View.Main.dfm=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/01/28 09:05:49.000.396,\\192.168.86.28\PlenusTECH\PesaMaisVCL\PesaMaisVCL.dproj=C:\Users\W10 PRO\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/01/28 14:02:03.000.105,=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit2.pas</Transaction>
+    <Transaction>2022/01/28 14:02:18.000.876,=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit2.pas</Transaction>
+    <Transaction>2022/01/28 14:04:29.000.344,\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit2.dfm=\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\Pages\PesaMais.View.Pages.FormTemplate.dfm</Transaction>
+    <Transaction>2022/01/28 14:04:29.000.344,\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit2.pas=\\192.168.86.28\PlenusTECH\PesaMaisVCL\src\View\Pages\PesaMais.View.Pages.FormTemplate.pas</Transaction>
+    <Transaction>2022/01/28 14:04:51.000.354,=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit3.pas</Transaction>
+    <Transaction>2022/01/28 14:05:50.000.355,=\\192.168.86.28\PlenusTECH\PesaMaisVCL\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

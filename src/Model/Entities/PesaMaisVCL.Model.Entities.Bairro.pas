@@ -1,0 +1,25 @@
+unit PesaMaisVCL.Model.Entities.Bairro;
+
+interface
+Type
+  TPessoa = Class
+
+  end;
+
+Private
+  FId_Bairro  :  Integer;
+  Function getId_bairro  :  Integer;
+  procedure setId_bairro (Value : Integer);
+
+Public
+  Property Id_Bairro : Integer read getId_bairro write set id_bairro;
+
+implementation
+
+function TPessoa.getId_bairro : Integer;
+begin
+  Result  :=  Fid_bairro;
+end;
+
+
+end.

@@ -1,0 +1,88 @@
+unit PesaMaisVCL.View.Main;
+
+interface
+
+uses
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Variants,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.Dialogs,
+  Vcl.ExtCtrls,
+  PesaMaisVCL.View.Styles.FontColors,
+  Vcl.Buttons,
+  Vcl.ComCtrls;
+
+type
+  TFrmMain = class(TForm)
+    pnlMain: TPanel;
+    pnlRodape: TPanel;
+    Panel3: TPanel;
+    pnlMenu: TPanel;
+    Panel4: TPanel;
+    pnlEmpresa: TPanel;
+    stbMain : TStatusBar;
+    pnlPrincipal: TPanel;
+    btnHome : TSpeedButton;
+    btnCadastros : TSpeedButton;
+    btnLancamento : TSpeedButton;
+    btnRelatorio : TSpeedButton;
+    SpeedButton1: TSpeedButton;
+
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+
+    procedure setStyles;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TFrmMain;
+
+implementation
+
+
+{$R *.dfm}
+
+{ TForm1 }
+
+procedure TFrmMain.FormCreate(Sender: TObject);
+begin
+  setStyles;
+end;
+
+procedure TFrmMain.setStyles;
+begin
+  pnlMenu.Color    := COLOR_PRIMARY;
+  pnlEmpresa.Color := COLOR_PRIMARY;
+  pnlPrincipal.Color := COLOR_SECUNDARY;
+
+  //BUTTON HOME
+  btnHome.Font.Color := COLOR_TEXT_PRIMARY;
+  btnHome.Font.Name := FONT_NAME1;
+  btnHome.FOnt.Size := FONT_H6;
+  //BUTTON CADASTROS
+  btnCadastros.Font.Color := COLOR_TEXT_PRIMARY;
+  btnCadastros.Font.Name := FONT_NAME1;
+  btnCadastros.FOnt.Size := FONT_H6;
+  //BUTTON LANCAMENTOS
+  btnLancamento.Font.Color := COLOR_TEXT_PRIMARY;
+  btnLancamento.Font.Name := FONT_NAME1;
+  btnLancamento.FOnt.Size := FONT_H6;
+  //BUTTON RELATORIOS
+  btnRelatorio.Font.Color := COLOR_TEXT_PRIMARY;
+  btnRelatorio.Font.Name := FONT_NAME1;
+  btnRelatorio.FOnt.Size := FONT_H6;
+  //BUTTON CONFIGURAÇÕES
+  //btnHome.Font.Color := COLOR_TEXT_PRIMARY;
+  //btnHome.Font.Name := FONT_NAME1;
+  //btnHome.FOnt.Size := FONT_H6;
+end;
+
+end.

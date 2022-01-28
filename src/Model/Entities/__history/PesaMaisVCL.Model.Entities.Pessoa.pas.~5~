@@ -1,0 +1,62 @@
+unit PesaMaisVCL.Model.Entities.Pessoa;
+
+interface
+
+type
+  TPessoa = class
+    private
+      FId_pessoa : Integer;
+      FRazsocial_Nome : String;
+
+      function getId_Pessoa : Integer;
+      procedure setId_Pessoa(Value : Integer);
+
+      function getRazsocial_nome : String;
+      procedure setRazsocial_nome(Value : String);
+
+    public
+      constructor Create;
+      constructor Create(Pessoa : TPessoa); overload;
+
+      property id_pessoa : Integer read getId_Pessoa write setId_Pessoa;
+      property razsocial_noma : String read getRazsocial_Nome write setRazsocial_Nome;
+  end;
+
+implementation
+
+{ TPessoa }
+
+//GET & SET
+constructor TPessoa.Create(Pessoa: TPessoa);
+begin
+  id_Pessoa := Pessoa.getId_Pessoa;
+  razsocial_noma := Pessoa.getRazsocial_nome;
+
+end;
+
+constructor TPessoa.Create;
+begin
+
+end;
+
+function TPessoa.getId_Pessoa: Integer;
+begin
+  Result := FId_pessoa;
+end;
+
+function TPessoa.getRazsocial_nome: String;
+begin
+  Result := FRazsocial_Nome;
+end;
+
+procedure TPessoa.setId_Pessoa(Value : Integer);
+begin
+  FId_pessoa := Value;
+end;
+
+procedure TPessoa.setRazsocial_nome(Value: String);
+begin
+  FRazsocial_Nome := Value;
+end;
+
+end.

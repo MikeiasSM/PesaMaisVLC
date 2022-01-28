@@ -1,0 +1,15 @@
+program PesaMaisVCL;
+
+uses
+  Vcl.Forms,
+  PesaMaisVCL.View.Main in 'src\View\PesaMaisVCL.View.Main.pas' {Form1},
+  PesaMaisVCL.View.Styles.FontColors in 'src\View\Styles\PesaMaisVCL.View.Styles.FontColors.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.
