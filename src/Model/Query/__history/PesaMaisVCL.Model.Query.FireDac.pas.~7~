@@ -1,0 +1,61 @@
+unit PesaMaisVCL.Model.Query.FireDac;
+
+interface
+
+uses
+  PesaMais.Model.Conection.Interfaces,
+  FireDAC.Stan.Intf,
+  FireDAC.Stan.Option,
+  FireDAC.Stan.Error,
+  FireDAC.UI.Intf,
+  FireDAC.Phys.Intf,
+  FireDAC.Stan.Def,
+  FireDAC.Stan.Pool,
+  FireDAC.Stan.Async,
+  FireDAC.Phys,
+  FireDAC.VCLUI.Wait,
+  FireDAC.Comp.Client,
+  Data.DB;
+
+Type
+  TModelQueryFiredac = Class(TInterfacedObject, iQuery)
+
+
+
+Private
+  FParent : iConexao;
+  FQuery  : TFDQuery;
+Public
+  constructor Create(Parent : iConexao);
+  destructor Destroy; override;
+  class function New(Parent : iConexao) : iQuery;
+
+end;
+
+ implementation
+
+uses
+  System.SysUtils;
+
+
+{ TConexaoFiredac }
+
+constructor TModelQueryFiredac.Create(Parent : iConexao);
+begin
+  FParent := Parent;
+  FQuery  := TFDQuery.Create(nil);
+  FQuery.Connection := TFDConnection(FParent.Connection);
+end;
+
+destructor TModelQueryFiredac.Destroy;
+begin
+  FreeAndNil(FQuery);
+  inherited;
+end;
+
+class function TModelQueryFiredac.New(Parent : iConexao) : iQuery;
+begin
+  Result := Self.Create(Parent);
+end;
+
+end.

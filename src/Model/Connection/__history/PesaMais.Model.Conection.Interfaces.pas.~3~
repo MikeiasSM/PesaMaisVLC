@@ -1,0 +1,12 @@
+unit PesaMais.Model.Conection.Interfaces;
+
+interface
+
+type
+  iConexao = interface
+  ['{EFDE1D45-F0D9-4346-B003-92F64BAC3750}']
+  end;
+
+implementation
+
+end.

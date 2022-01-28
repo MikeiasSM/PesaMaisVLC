@@ -1,0 +1,31 @@
+unit PesaMaisVCL.Model.Connection.FireDac;
+
+interface
+
+uses
+  PesaMais.Model.Conection.Interfaces;
+
+type
+  TConectionFiredac = class(TInterfacedObject, iConexao);
+    private
+    public
+      constructor Create;
+      destructor Destroy; override;
+      class function New : iConexao;
+end;
+
+
+implementation
+
+constructor TConectionFiredac.Create;
+begin
+
+end;
+
+destructor TConectionFiredac.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

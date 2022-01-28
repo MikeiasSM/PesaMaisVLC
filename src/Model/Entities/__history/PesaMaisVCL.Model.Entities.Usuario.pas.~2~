@@ -1,0 +1,40 @@
+unit PesaMaisVCL.Model.Entities.Usuario;
+
+interface
+Type
+  TUsuario = Class
+
+
+
+Private
+  FId_Usuario : Integer;
+  FNome       : String;
+  FSenha      : String;
+
+  function getId_Usuario : Integer;
+  function getNome       : String;
+  function getSenha      : String;
+
+  procedure setId_Usuario (const Id_Usuario : Integer);
+  procedure setNome       (const Nome       : String);
+  procedure setSenha      (const Senha      : String);
+
+Public
+  constructor Create; overload;
+  constructor Create(Id_Usuario : Integer; Nome: String; Senha : String); overload;
+
+  property Id_Usuario : Integer read getId_Usuario write setId_Usuario;
+  property Nome       : String  read getNome       write setNome;
+  property Senha      : String  read getSenha      write setSenha;
+
+end;
+
+ implementation
+
+uses
+  System.SysUtils;
+
+
+{ TUsuario }
+
+end.

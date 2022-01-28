@@ -1,0 +1,17 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 645
+  Width = 1069
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=C:\Delphi\DATATECH.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'CharacterSet=WIN1252'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 732
+    Top = 72
+  end
+end

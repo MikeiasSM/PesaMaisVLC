@@ -1,0 +1,7 @@
+unit PesaMaisVCL.Model.Entities.Usuario;
+
+interface
+
+implementation
+
+end.

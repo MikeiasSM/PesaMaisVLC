@@ -84,6 +84,8 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -100,17 +102,35 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="src\View\PesaMaisVCL.View.Main.pas">
-            <Form>Form1</Form>
+            <Form>FormMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\Styles\PesaMaisVCL.View.Styles.FontColors.pas"/>
-        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Propriedade.pas"/>
         <DCCReference Include="src\View\Pages\PesaMais.View.Pages.FormTemplate.pas">
-            <Form>Form2</Form>
+            <Form>formTemplate</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Bairro.pas"/>
         <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Cidade.pas"/>
+        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Endereco.pas"/>
+        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Estado.pas"/>
+        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Propriedade.pas"/>
+        <DCCReference Include="src\View\Pages\PesaMais.View.Pages.Dashboard.pas">
+            <Form>FormDashboard</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\Pages\PesaMais.View.Pages.Principal.pas">
+            <Form>FormPrincipal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\Pages\Routers\PesaMaisVCL.View.Pages.Routers.pas"/>
+        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Usuario.pas"/>
+        <DCCReference Include="src\Model\Connection\PesaMais.Model.Conection.Interfaces.pas"/>
+        <DCCReference Include="src\Model\Connection\PesaMais.Model.Conection.FireDac.pas"/>
+        <DCCReference Include="src\Model\Query\PesaMaisVCL.Model.Query.FireDac.pas"/>
+        <DCCReference Include="src\Controller\PesaMais.Controller.FactoryQuery.pas"/>
+        <DCCReference Include="src\Controller\PesaMais.Controller.Interfaces.pas"/>
+        <DCCReference Include="src\Model\Entities\Interfaces\PesaMaisVCL.Model.Entities.Interfaces.iEntities.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -131,6 +151,10 @@
                 <Source>
                     <Source Name="MainSource">PesaMaisVCL.dpr</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k270.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp270.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
                 <DeployFile LocalName="Win32\Debug\PesaMaisVCL.exe" Configuration="Debug" Class="ProjectOutput">
@@ -914,6 +938,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
             </Platforms>
+            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
