@@ -15,21 +15,24 @@ Private
   function getDescricao : String;
   function getId_Cidade : Integer;
 
-  procedure setId_bairro (Value : Integer);
-  procedure setDescricao (Value : String);
-  procedure serId_Cidade (Value : Integer);
+  procedure setId_bairro (const id_bairro : Integer);
+  procedure setDescricao (const Descricao : String);
+  procedure setId_Cidade (const Id_Cidade : Integer);
 
 Public
   constructor Create; overload;
   constructor Create(Id_bairro : Integer; Descicao: String; Id_Cidade : Integer); overload; //pode ser sobregarregada
 
   property Id_Bairro : Integer read getId_bairro write setid_bairro;
-  property Descricao : String read  getDescricao write setDescricao;
+  property Descricao : String  read getDescricao write setDescricao;
   property Id_Cidade : Integer read getId_Bairro write setId_bairro;
 
 end;
 
  implementation
+
+uses
+  System.SysUtils;
 
 
 { TPessoa }
@@ -61,19 +64,21 @@ begin
   Result := FId_Cidade;
 end;
 
-procedure TBairro.serId_Cidade(Value: Integer);
+procedure TBairro.setId_Cidade(const Id_cidade: Integer);
 begin
-   FId_Cidade := Value;
+   FId_Cidade := Id_Cidade;
 end;
 
-procedure TBairro.setDescricao(Value: String);
+procedure TBairro.setDescricao(const Descricao: String);
 begin
-   FDescricao := Value;
+   if Descricao = '' then
+    raise Exception.Create('O campo descrição bairro deve ser informado!');
+   FDescricao := Descricao;
 end;
 
-procedure TBairro.setId_bairro(Value: Integer);
+procedure TBairro.setId_bairro(const Id_Bairro: Integer);
 begin
-   FId_Bairro := Value;
+   FId_Bairro := Id_bairro;
 end;
 
 end.
