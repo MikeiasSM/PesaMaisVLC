@@ -104,7 +104,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\View\Styles\PesaMaisVCL.View.Styles.FontColors.pas"/>
-        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Pessoa.pas"/>
+        <DCCReference Include="src\Model\Entities\PesaMaisVCL.Model.Entities.Propriedade.pas"/>
         <DCCReference Include="src\View\Pages\PesaMais.View.Pages.FormTemplate.pas">
             <Form>Form2</Form>
             <FormType>dfm</FormType>
