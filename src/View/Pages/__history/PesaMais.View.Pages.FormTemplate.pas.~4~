@@ -1,0 +1,39 @@
+unit PesaMais.View.Pages.FormTemplate;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids, Vcl.Buttons;
+
+type
+  TForm2 = class(TForm)
+    pnlRaiz: TPanel;
+    pnlMain: TPanel;
+    btnMenu: TPanel;
+    lblNomeTela: TLabel;
+    btnSair: TSpeedButton;
+    btnLocalizar: TSpeedButton;
+    btnExcluir: TSpeedButton;
+    btnSeparador: TPanel;
+    Panel5: TPanel;
+    pnlBotao: TPanel;
+    pnlPrincipal: TPanel;
+    btnSalvar: TSpeedButton;
+    btnCancelar: TSpeedButton;
+    btnIncuir: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+end.

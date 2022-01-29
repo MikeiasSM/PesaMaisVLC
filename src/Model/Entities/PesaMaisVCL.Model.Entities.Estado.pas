@@ -20,6 +20,7 @@ private
 public
   constructor Create; overload;
   constructor Create(Id_estado : Integer; Nome: String; uf : String); overload; //pode ser sobregarregada
+  destructor Destroy; override;
 
   property id_estado : integer read getId_estado write setId_estado;
   property Nome      : String  read getNome      write setNome;
@@ -44,6 +45,12 @@ begin
   FId_Estado := Id_estado;
   FNome      := Nome;
   Fuf        := uf;
+end;
+
+destructor TEstado.Destroy;
+begin
+
+  inherited;
 end;
 
 function TEstado.getId_estado: Integer;

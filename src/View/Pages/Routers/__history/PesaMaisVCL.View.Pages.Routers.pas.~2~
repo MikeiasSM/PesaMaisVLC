@@ -1,0 +1,33 @@
+unit PesaMaisVCL.View.Pages.Routers;
+
+interface
+type
+  TRouter = class
+    private
+    public
+      constructor Create;
+      destructor Destroy; override;
+  end;
+
+implementation
+
+uses
+  Router4D, PesaMais.View.Pages.Principal;
+
+{ TRouter }
+
+constructor TRouter.Create;
+begin
+  TRouter4D
+    .Switch
+      .Router('Principal', TFormPrincipal)
+      .Router('Dashboard', TFormDashboard);
+end;
+
+destructor TRouter.Destroy;
+begin
+
+  inherited;
+end;
+
+end.

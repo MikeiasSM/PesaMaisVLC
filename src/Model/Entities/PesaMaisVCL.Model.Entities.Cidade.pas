@@ -26,6 +26,7 @@ private
 public
   constructor Create; overload;
   constructor Create(Id_Cidade : Integer; Nome: String; Cep : String; Codmun_ibge : String; Id_Estado : Integer); overload; //pode ser sobregarregada
+  destructor Destroy; override;
 
   property Id_cidade   : Integer read getId_cidade   write setId_cidade;
   property Nome        : String  read getNome        write setNome;
@@ -53,6 +54,12 @@ begin
    FCep         := Cep;
    FCodmun_ibge := Codmun_ibge;
    FId_Estado   := Id_Estado;
+end;
+
+destructor TCidade.Destroy;
+begin
+
+  inherited;
 end;
 
 function TCidade.getCep: String;

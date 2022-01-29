@@ -1,0 +1,9 @@
+unit PesaMais.Model.Conection.Interfaces;
+
+interface
+
+type
+
+implementation
+
+end.

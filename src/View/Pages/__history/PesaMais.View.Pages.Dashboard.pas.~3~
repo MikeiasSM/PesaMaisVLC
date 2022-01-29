@@ -1,0 +1,29 @@
+unit PesaMais.View.Pages.Dashboard;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
+
+type
+  TFormDashboard = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    DBGrid1: TDBGrid;
+    DataSource1: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormDashboard: TFormDashboard;
+
+implementation
+
+{$R *.dfm}
+
+end.

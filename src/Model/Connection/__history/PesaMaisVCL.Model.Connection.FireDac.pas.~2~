@@ -1,0 +1,11 @@
+unit PesaMaisVCL.Model.Connection.FireDac;
+
+interface
+
+type
+  TConectionFiredac = (TInterfacedObject, iConexao);
+  private
+
+implementation
+
+end.

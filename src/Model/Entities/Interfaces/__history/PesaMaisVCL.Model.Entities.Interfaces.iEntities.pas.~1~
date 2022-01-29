@@ -1,0 +1,7 @@
+unit PesaMaisVCL.Model.Entities.Interfaces.iEntities;
+
+interface
+
+implementation
+
+end.

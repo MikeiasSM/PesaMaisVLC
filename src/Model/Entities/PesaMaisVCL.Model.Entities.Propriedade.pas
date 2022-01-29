@@ -67,7 +67,7 @@ type
                          Id_Estado : Integer;
                          Id_Endereco : Integer
                          ); overload;
-      destructor Destroy;
+      destructor Destroy; override;
 
       property id_propriedade : Integer read getId_Propriedade write setId_Propriedade;
       property razsocial_nome : String  read getRazsocial_Nome write setRazsocial_Nome;
@@ -121,7 +121,8 @@ end;
 
 destructor TPropriedade.Destroy;
 begin
-  DisposeOf;
+
+  inherited;
 end;
 
 function TPropriedade.getComplemento: String;

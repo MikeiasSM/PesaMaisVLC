@@ -22,6 +22,7 @@ Private
 Public
   constructor Create; overload;
   constructor Create(Id_bairro : Integer; Descicao: String; Id_Cidade : Integer); overload; //pode ser sobregarregada
+  destructor Destroy; override;
 
   property Id_Bairro : Integer read getId_bairro write setid_bairro;
   property Descricao : String  read getDescricao write setDescricao;
@@ -47,6 +48,12 @@ begin
    FId_Bairro := Id_bairro;
    FDescricao := Descicao;
    FId_Cidade := Id_Cidade;
+end;
+
+destructor TBairro.Destroy;
+begin
+
+  inherited;
 end;
 
 function TBairro.getDescricao: String;
