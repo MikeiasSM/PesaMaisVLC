@@ -4,8 +4,6 @@ interface
 Type
   TBairro = Class
 
-
-
 Private
   FId_Bairro : Integer;
   FDescricao : String;
@@ -87,5 +85,7 @@ procedure TBairro.setId_bairro(const Id_Bairro: Integer);
 begin
    FId_Bairro := Id_bairro;
 end;
+
+//modificado
 
 end.
